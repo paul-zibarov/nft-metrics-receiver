@@ -1,0 +1,25 @@
+Event handler setup:
+
+1. npm install
+2. Set SOCKET_SERVER_URL and API_PORT to env file variable
+3. npm run start
+
+For storing other events data:
+
+1. Install PostgreSQL
+2. Setup local db or specify connection to external db in env file
+3. Create model for storing event data in ./models
+4. Add socket.on function to index.ts
+5. Create a controller for data event data retreaving in ./controllers
+6. Specify enpoints in index.ts file
+
+Hadler can receive and store transfer events data of MutantApeYachtClub Tokens.
+
+Specified endpoints:
+
+/getDailyVolume - returns daily trade volume
+/getMonthlyVolume - returns monthly trade volume
+/getTokenTransfersCount?tokenId= - return count of specific token transfers
+/getTokenSalesCount?tokenId= - return count of specific token sales
+/getTotalTransfersCount - return total count of transfers
+/getTotalSalesCount - return total count of sales

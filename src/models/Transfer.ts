@@ -14,11 +14,11 @@ export default (sequelize: Sequelize) => {
             },
             from: {type: DataTypes.STRING, field: "from"},
             to: {type: DataTypes.STRING, field: "to"},
-            tokenId: {type: DataTypes.INTEGER, field: "token_id"},
-            value: {type: DataTypes.INTEGER, field: "eth_value"},
+            tokenId: {type: DataTypes.STRING, field: "token_id"},
+            value: {type: DataTypes.STRING, field: "eth_value"},
             txHash: {type: DataTypes.STRING, field: "tx_hash"},
-            createdAt: {type: DataTypes.INTEGER, field: "created_at"},
-            updatedAt: {type: DataTypes.INTEGER, field: "updated_at"}
+            createdAt: {type: DataTypes.DATE, field: "created_at"},
+            updatedAt: {type: DataTypes.DATE, field: "updated_at"}
         },
         {
             tableName: "transfers",

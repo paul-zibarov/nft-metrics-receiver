@@ -1,13 +1,13 @@
-import { BigNumber} from "ethers";
+import { BigNumber } from "ethers";
 
 export class TransferEvent {
     from: string;
     to: string;
-    tokenId: BigNumber;
+    tokenId: string;
     txHash: string;
-    value: BigNumber;
+    value: string;
 
-    constructor(from: string, to: string, tokenId: BigNumber, txHash: string, value: BigNumber) {
+    constructor(from: string, to: string, tokenId: string, txHash: string, value: string) {
         this.from = from;
         this.to = to;
         this.tokenId = tokenId;
